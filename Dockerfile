@@ -7,7 +7,6 @@ COPY package.json bun.lock bunfig.toml turbo.json tsconfig.json ./
 COPY packages ./packages
 COPY script ./script
 COPY patches ./patches
-COPY .opencode ./.opencode
 
 RUN bun install --frozen-lockfile
 
