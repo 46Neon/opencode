@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: opencode
+    runtime: docker
+    plan: free
+    branch: dev
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
