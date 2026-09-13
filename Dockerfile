@@ -8,7 +8,8 @@ COPY packages ./packages
 COPY script ./script
 COPY patches ./patches
 
-RUN bun install --frozen-lockfile
+# Render does not need Git hooks or local postinstall hooks during the image build.
+RUN bun install --frozen-lockfile --ignore-scripts
 
 ENV NODE_ENV=production
 ENV HOSTNAME=0.0.0.0
