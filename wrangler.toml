@@ -1,0 +1,3 @@
+name = "opencode-web-preview"
+compatibility_date = "2026-09-13"
+pages_build_output_dir = "packages/app/dist"
